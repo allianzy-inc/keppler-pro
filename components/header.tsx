@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "@/components/theme-provider"
 import { useLanguage } from "@/components/language-provider"
 import { Moon, Sun, Menu, X, MessageCircle } from "lucide-react"
+import Image from "next/image"
 
 const WHATSAPP_NUMBER = "<WHATSAPP_NUMBER>"
 
@@ -26,12 +27,19 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">K</span>
-          </div>
-          <span className="text-lg font-bold text-foreground">Keppler Pro</span>
+        <a href="#" className="flex items-center">
+          {mounted ? (
+            <Image
+              src={theme === "dark" ? "/logo-dark.svg" : "/logo-light.svg"}
+              alt="Keppler Pro"
+              width={120}
+              height={48}
+              className="h-8 w-auto"
+              priority
+            />
+          ) : (
+            <div className="h-8 w-[120px]" />
+          )}
         </a>
 
         {/* Desktop Navigation */}

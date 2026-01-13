@@ -51,7 +51,7 @@ export function Contact() {
           </motion.a>
 
           <motion.a
-            href="mailto:hello@allianzy.com"
+            href="mailto:info@keppler.pro"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -64,7 +64,7 @@ export function Contact() {
             </div>
             <div>
               <h3 className="text-xl font-semibold text-foreground">{t.contact.email}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">hello@allianzy.com</p>
+              <p className="mt-2 text-sm text-muted-foreground">info@keppler.pro</p>
             </div>
             <div className="flex items-center gap-2 text-sm font-medium text-primary">
               {t.contact.sendEmail}

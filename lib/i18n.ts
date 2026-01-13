@@ -95,7 +95,7 @@ export const translations = {
       starter: {
         name: "Starter",
         description: "Perfect for small businesses and startups.",
-        price: "From $1,500",
+        price: "$150 USD",
         features: [
           "Single page website",
           "Mobile responsive design",
@@ -107,7 +107,7 @@ export const translations = {
       pro: {
         name: "Pro",
         description: "For growing businesses that need more.",
-        price: "From $3,500",
+        price: "$350 USD",
         features: [
           "Multi-page website (up to 10)",
           "Custom design & animations",
@@ -178,7 +178,7 @@ export const translations = {
         {
           question: "Do you offer maintenance and support?",
           answer:
-            "Yes! We offer monthly maintenance packages starting at $150/month that include security updates, backups, minor content changes, and priority support.",
+            "Yes! We offer monthly maintenance packages starting at $50/month that include security updates, backups, minor content changes, and priority support.",
         },
         {
           question: "Can you work in both English and Spanish?",
@@ -314,7 +314,7 @@ export const translations = {
       starter: {
         name: "Starter",
         description: "Perfecto para pequeños negocios y startups.",
-        price: "Desde $1,500",
+        price: "$150 USD",
         features: [
           "Sitio web de una página",
           "Diseño responsive móvil",
@@ -326,7 +326,7 @@ export const translations = {
       pro: {
         name: "Pro",
         description: "Para negocios en crecimiento que necesitan más.",
-        price: "Desde $3,500",
+        price: "$350 USD",
         features: [
           "Sitio multi-página (hasta 10)",
           "Diseño personalizado y animaciones",
@@ -398,7 +398,7 @@ export const translations = {
         {
           question: "¿Ofrecen mantenimiento y soporte?",
           answer:
-            "¡Sí! Ofrecemos paquetes de mantenimiento mensual desde $150/mes que incluyen actualizaciones de seguridad, backups, cambios menores de contenido y soporte prioritario.",
+            "¡Sí! Ofrecemos paquetes de mantenimiento mensual desde $50/mes que incluyen actualizaciones de seguridad, backups, cambios menores de contenido y soporte prioritario.",
         },
         {
           question: "¿Pueden trabajar en inglés y español?",
