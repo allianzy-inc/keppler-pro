@@ -72,7 +72,7 @@ export function Work() {
               >
                 <div className="aspect-[4/3] overflow-hidden bg-secondary">
                   <img
-                    src={`/.jpg?height=300&width=400&query=${project.type} website mockup ${project.name}`}
+                    src={project.image || "/placeholder.svg"}
                     alt={project.name}
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -88,7 +88,7 @@ export function Work() {
                     </span>
                   </div>
                   <Button variant="ghost" size="sm" className="mt-4 w-full justify-center" asChild>
-                    <a href="#contact">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
                       {t.work.viewProject}
                       <ExternalLink className="ml-2 h-3.5 w-3.5" />
                     </a>
