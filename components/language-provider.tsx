@@ -20,8 +20,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setMounted(true)
     const stored = localStorage.getItem("keppler-lang") as Language | null
+
     if (stored && (stored === "en" || stored === "es")) {
       setLanguageState(stored)
+    } else {
+      const browserLang = navigator.language || (navigator as any).userLanguage || "en"
+      const detectedLang: Language = browserLang.toLowerCase().startsWith("es") ? "es" : "en"
+      setLanguageState(detectedLang)
+      localStorage.setItem("keppler-lang", detectedLang)
     }
   }, [])
 
