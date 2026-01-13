@@ -106,7 +106,7 @@ export const translations = {
         },
         {
           name: "Pronta Invitaciones",
-          type: "ecommerce",
+          type: "landing",
           result: "Digital Invitations",
           url: "https://carlos.prontainvitaciones.me",
           image: "/digital-invitations-ecommerce-website-elegant.jpg",
@@ -361,7 +361,7 @@ export const translations = {
         },
         {
           name: "Pronta Invitaciones",
-          type: "ecommerce",
+          type: "landing",
           result: "Invitaciones Digitales",
           url: "https://carlos.prontainvitaciones.me",
           image: "/digital-invitations-ecommerce-website-elegant.jpg",
