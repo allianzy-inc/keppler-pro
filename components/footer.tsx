@@ -61,7 +61,7 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { href: "https://facebook.com/keppler", icon: FacebookIcon, label: "Facebook" },
+    { href: "https://facebook.com/keppler.pro", icon: FacebookIcon, label: "Facebook" },
     { href: "https://instagram.com/keppler.pro", icon: InstagramIcon, label: "Instagram" },
     { href: `https://wa.me/${WHATSAPP_NUMBER}`, icon: WhatsAppIcon, label: "WhatsApp" },
     { href: "https://linkedin.com/company/keppler", icon: LinkedInIcon, label: "LinkedIn" },
